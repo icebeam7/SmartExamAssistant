@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SmartExamAssistant.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SmartExamAssistant"
+    xmlns:views="clr-namespace:SmartExamAssistant.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Smart Exam Assistant">
+
+    <ShellContent
+        Title="Exams"
+        ContentTemplate="{DataTemplate views:ExamsView}"
+        Route="ExamsPage" />
+
+    <ShellContent
+        Title="Documents"
+        ContentTemplate="{DataTemplate views:DocumentsView}"
+        Route="DocumentsPage" />
+</Shell>
